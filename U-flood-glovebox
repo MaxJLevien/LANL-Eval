@@ -7,8 +7,8 @@ c Cell Cards
 
 c Surface Cards
 1    rcc  0. 0. 0.       0. 0. 8.304            4.152      $1:1 H/D Cylinder, assumed to be most reactive.
-2    rcc  0. 0. -9.4013    0. 0. 22.082        11.041    $1 inch + 4L of close fitting water approxmating hands and tools as well as a 4L flood from the LVCCW. 
-3    rcc  0. 0. -25.11755  0. 0. 52.514       26.757    $6 & 3/16ths inch thick close fitting steel, approximating furnace(6") + glovebox(3/16")
+2    rcc  0. 0. -6.889    0. 0. 22.082        11.041    $1 inch + 4L of close fitting water approximating hands and tools as well as a 4L flood from the LVCCW. 
+3    rcc  0. 0. -22.605  0. 0. 52.514       26.757    $6 & 3/16ths inch thick close fitting steel, approximating furnace(6") + glovebox(3/16")
 
 c Data Cards
 kcode 10000 1.0 30 100
