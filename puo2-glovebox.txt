@@ -6,9 +6,9 @@ c Cell Cards
 40   0               3        imp:n=0
 
 c Surface Cards
-1    rcc  0. 0. 0.       0. 0. 7.7206        3.8603      $1:1 H/D Cylinder
-2    rcc  0. 0. -2.54    0. 0. 12.8006       6.4003      $1 inch of close fitting water
-3    rcc  0. 0. -18.28   0. 0. 44.2331       22.11655    $6 inches of close fitting stainless steel, extra 0.5cm to bound glovebox
+1    rcc  0. 0. 0.       0. 0. 8.04953       4.024765      $1:1 H/D Cylinder
+2    rcc  0. 0. -2.54    0. 0. 13.12953      6.564765      $1 inch of close fitting water
+3    rcc  0. 0. -18.28   0. 0. 44.56203      22.281015    $6 inches of close fitting stainless steel, extra 0.5cm to bound glovebox
 
 c Data Cards
 kcode 10000 1.0 30 100
