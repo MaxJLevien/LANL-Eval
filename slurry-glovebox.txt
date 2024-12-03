@@ -8,7 +8,7 @@ c Cell Cards
 c Surface Cards
 1    rcc  0. 0. 0.         0. 0. 8.04953       4.024765    $1:1 H/D Cylinder
 2    rcc  0. 0. -4.861935  0. 0. 17.7734       8.8867      $4L of flood slurry
-3    rcc  0. 0. -18.28     0. 0. 49.2059       24.60295    $6 inches of close fitting stainless steel, extra 0.5cm to bound glovebox
+3    rcc  0. 0. -20.578185    0. 0. 49.2059       24.60295    $6 inches of close fitting stainless steel, extra 0.5cm to bound glovebox
 
 c Data Cards
 kcode 10000 1.0 30 100
