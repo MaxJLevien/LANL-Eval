@@ -3,12 +3,12 @@ c Cell Cards
 10   100  -13.888   -1        imp:n=1
 20   400  -1        1 -2      imp:n=1
 30   200  -8.027    2 -3      imp:n=1
-40   0               3        imp:n=0
+40   0              3         imp:n=0
 
 c Surface Cards
-1    rcc  0. 0. 0.       0. 0. 8.19358         4.09679     $1:1 H/D Cylinder
-2    rcc  0. 0. -2.54    0. 0. 13.27358        6.63679     $1 inch of close fitting water
-3    rcc  0. 0. -18.28   0. 0. 44.70608        22.35304    $6 inches of close fitting stainless steel, extra 0.5cm to bound glovebox
+1    rcc  0. 0. 0.       0. 0. 6.504         3.252          $1:1 H/D Cylinder, assumed to be most reactive.
+2    rcc  0. 0. -2.54    0. 0. 11.584        5.792          $1 inch of close fitting water apprixmiating the LVCCW or hands during movement. 
+3    rcc  0. 0. -18.28   0. 0. 42.164        21.532         $6 & 3/16ths inch thick close fitting steel, appriximating furnace(6") + glovebox(3/16")
 
 c Data Cards
 kcode 10000 1.0 30 100
@@ -43,5 +43,22 @@ m200  6012.00c -7.9232e-4                     $Stainless Steel, 8.027g/cm^3 , C1
       26057.00c -0.0138466055                 $Fe57
       26058.00c -0.001842729                  $Fe58
 mt200     fe-56.40t            $Stainless Steel Flexing
+c m300 1001.00c -0.004529                     $Concrete, 2.25g/cm^3, H1
+c      1002.00c -1e-6                          $H2
+c      8016.00c -0.511211                      $O16
+c      8017.00c -0.000207                      $O17
+c      8018.00c -0.001182                      $O18
+c      14028.00c -0.33261228                   $Si28
+c      14029.00c -0.016738722                  $Si29
+c      14030.00c -0.011008998                  $Si30
+c      13027.00c -0.03555                      $Al27
+c      11023.00c -0.01527                      $Na23
+c      20040.00c -0.05791                      $Ca, approximating all calcium as Ca40
+c      26054.00c -0.000805441                  $Fe54
+c      26056.00c -0.0126437012                 $Fe56
+c      26057.00c -0.0002919982                 $Fe57
+c      26058.00c -3.88596e-05                  $Fe58     
 m400      1001.00c 2     8016.00c 1         $Water
 mt400       h-h2o.40t
+m500  94239.00c -0.882353    $ Plutonium in PuO2
+      8016.00c  -0.117647     $ Oxygen in PuO2
