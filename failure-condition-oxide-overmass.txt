@@ -1,0 +1,79 @@
+Normal conditions for the leftmost glovebox $title
+c Cell Cards
+10   100  -13.888   -1                          imp:n=1
+20   400  -1        1 -2                        imp:n=1
+30   200  -8.027    2 -3                        imp:n=1
+40   500  -0.04803      -4                      imp:n=1       $113.3g (100/masspercPu) over 2360cm^3
+50   500  -9        -12                         imp:n=1
+60   400  -1        12 -13                      imp:n=1
+70   200  -8.027    13 -14                      imp:n=1
+80   0             14 3 4 -5 6 -7 8 -9 11       imp:n=1
+90   0              5:-6:7:-8:9:-11             imp:n=0
+
+c Surface Cards
+1    rcc  7.624530503 7.624530503 0.      0. 0. 6.504         3.252          $1:1 H/D Cylinder, assumed to be most reactive. 
+2    rcc  7.624530503 7.624530503 -2.54    0. 0. 11.584       5.792          $1 inch of close fitting water apprixmiating the LVCCW or hands during movement. 
+3    rcc  7.624530503 7.624530503 -3.01625 0. 0. 12.5365      6.26825        $6 & 3/16ths inch thick close fitting steel, appriximating furnace(6") + glovebox(3/16")
+4    rpp  -15.24 15.24   -15.24 15.24   49.87835 52.41835       $HEPA filter                                        
+*5  px 81.28                                              $Reflected condition to simulate neighboring glovebox. half the length of glovebox + 8 inches for distance between gloveboxes. Skipping 10 to avoid confusion with cell cards.\
+*6  px -81.28
+*7  py 81.28
+*8  py -81.28
+9   pz 55                                             $Void boundary. 
+11  pz -55                                            $Void boundary, skipping 10 to avoid confusion with cell cards.
+12    rcc  37.0527 37.0527 0.       0. 0. 11.3021       5.65105      $1:1 H/D Cylinder
+13    rcc  37.0527 37.0527 -2.54    0. 0. 16.3821      8.19105      $1 inch of close fitting water
+14    rcc  37.0527 37.0527 -18.25625 0. 0. 47.8146    23.9073     $3/16ths inch of steel to bounding glovebox. 
+
+c Data Cards
+kcode 10000 1.0 250 1000
+ksrc 39.428  39.428  1.0      8.948  8.948  1.0
+m100  94239.00c 1
+m200  6012.00c -7.9232e-4                     $Stainless Steel, 8.027g/cm^3 , C12
+      6013.00c -7.68e-6                       $C13
+      25055.00c -0.020000                     $Mn55
+      14028.00c -0.00923                      $Si28
+      14029.00c -0.0004645                    $Si29
+      14030.00c -0.0003055                    $Si30
+      24050.00c -0.0073865                    $Cr50
+      24052.00c -0.1424413                    $Cr52
+      24053.00c -0.0161517                    $Cr53
+      24054.00c -0.0040205                    $Cr54  
+      28058.00c -0.08169228                   $Ni58
+      28060.00c -0.03146772                   $Ni60
+      28061.00c -0.00136788                   $Ni61
+      28062.00c -0.0043614                    $Ni62
+      28064.00c -0.00111072                   $Ni64
+      42092.00c -0.00366225                   $Mo92
+      42094.00c -0.00229675                   $Mo94
+      42095.00c -0.00396825                   $Mo95
+      42096.00c -0.00416825                   $Mo96
+      42097.00c -0.0023955                    $Mo97
+      42098.00c -0.006073                     $Mo98
+      42100.00c -0.002436                     $Mo100
+      15031.00c -0.000450                     $P31
+      16032.00c -0.000300                     $S, approximating all sulfur as S32
+      26054.00c -0.0381941525                 $Fe54
+      26056.00c -0.599566513                  $Fe56
+      26057.00c -0.0138466055                 $Fe57
+      26058.00c -0.001842729                  $Fe58
+mt200     fe-56.40t            $Stainless Steel Flexing
+c m300 1001.00c -0.004529                     $Concrete, 2.25g/cm^3, H1
+c      1002.00c -1e-6                          $H2
+c      8016.00c -0.511211                      $O16
+c      8017.00c -0.000207                      $O17
+c      8018.00c -0.001182                      $O18
+c      14028.00c -0.33261228                   $Si28
+c      14029.00c -0.016738722                  $Si29
+c      14030.00c -0.011008998                  $Si30
+c      13027.00c -0.03555                      $Al27
+c      11023.00c -0.01527                      $Na23
+c      20040.00c -0.05791                      $Ca, approximating all calcium as Ca40
+c      26054.00c -0.000805441                  $Fe54
+c      26056.00c -0.0126437012                 $Fe56
+c      26057.00c -0.0002919982                 $Fe57
+c      26058.00c -3.88596e-05                  $Fe58     
+m400      1001.00c 2     8016.00c 1         $Water
+mt400       h-h2o.40t
+m500  94239.00c -0.8819188192    $ Plutonium in PuO2
+      8016.00c  -0.1180811808     $ Oxygen in PuO2
