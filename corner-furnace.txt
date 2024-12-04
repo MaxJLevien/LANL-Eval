@@ -69,5 +69,5 @@ c      26057.00c -0.0002919982                 $Fe57
 c      26058.00c -3.88596e-05                  $Fe58     
 m400      1001.00c 2     8016.00c 1         $Water
 mt400       h-h2o.40t
-m500  94239.00c -0.882353    $ Plutonium in PuO2
-      8016.00c  -0.117647     $ Oxygen in PuO2
+m500  94239.00c -0.8819188192    $ Plutonium in PuO2
+      8016.00c  -0.1180811808     $ Oxygen in PuO2
