@@ -1,19 +1,16 @@
 Normal conditions for the leftmost glovebox $title
 c Cell Cards
-10   100  -13.888   -1                          imp:n=1
-20   400  -1        1 -2                        imp:n=1
-30   200  -8.027    2 -3                        imp:n=1
-40   500  -0.04803      -4                      imp:n=1       $113.3g (100/masspercPu) over 2360cm^3
-50   500  -9        -12                         imp:n=1
-60   400  -1        12 -13                      imp:n=1
-70   200  -8.027    13 -14                      imp:n=1
-80   0             14 3 4 -5 6 -7 8 -9 11       imp:n=1
-90   0              5:-6:7:-8:9:-11             imp:n=0
+10   100  -13.888   -1        imp:n=1
+20   400  -1        1 -2      imp:n=1
+30   200  -8.027    2 -3      imp:n=1
+40   500  -0.04803      -4        imp:n=1       $113.3g (100/masspercPu) over 2360cm^3
+50   0              3 4 -5 6 -7 8 -9 11    imp:n=1
+60   0              5:-6:7:-8:9:-11  imp:n=0
 
 c Surface Cards
-1    rcc  39.428 39.428 0.       0. 0. 6.504         3.252          $1:1 H/D Cylinder, assumed to be most reactive.
-2    rcc  39.428 39.428 -2.54    0. 0. 11.584        5.792          $1 inch of close fitting water apprixmiating the LVCCW or hands during movement. 
-3    rcc  39.428 39.428 -18.28   0. 0. 42.164        21.532         $6 & 3/16ths inch thick close fitting steel, appriximating furnace(6") + glovebox(3/16")
+1    rcc  39.428 0. 0.       0. 0. 6.504         3.252          $1:1 H/D Cylinder, assumed to be most reactive.
+2    rcc  39.428 0. -2.54    0. 0. 11.584        5.792          $1 inch of close fitting water apprixmiating the LVCCW or hands during movement. 
+3    rcc  39.428 0. -18.28   0. 0. 42.164        21.532         $6 & 3/16ths inch thick close fitting steel, appriximating furnace(6") + glovebox(3/16")
 4    rpp  -15.24 15.24   -15.24 15.24   36.772 39.312       $HEPA filter                                        
 *5  px 81.28                                              $Reflected condition to simulate neighboring glovebox. half the length of glovebox + 8 inches for distance between gloveboxes. Skipping 10 to avoid confusion with cell cards.\
 *6  px -81.28
@@ -21,13 +18,10 @@ c Surface Cards
 *8  py -81.28
 9   pz 50                                              $Void boundary. 
 11  pz -50                                             $Void boundary, skipping 10 to avoid confusion with cell cards.
-12    rcc  8.948 8.948 0.       0. 0. 8.04953       4.024765      $1:1 H/D Cylinder
-13    rcc  8.948 8.948 -2.54    0. 0. 13.12953      6.564765      $1 inch of close fitting water
-14    rcc  8.948 8.948 -3.01625 0. 0. 14.08203    7.517265      $3/16ths inch of steel to bounding glovebox. 
 
 c Data Cards
 kcode 10000 1.0 250 1000
-ksrc 39.428  39.428  1.0      8.948  8.948  1.0
+ksrc 39.428   0.0   1.0   
 m100  94239.00c 1
 m200  6012.00c -7.9232e-4                     $Stainless Steel, 8.027g/cm^3 , C12
       6013.00c -7.68e-6                       $C13

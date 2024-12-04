@@ -8,22 +8,22 @@ c Cell Cards
 60   0              5:-6:7:-8:9:-11  imp:n=0
 
 c Surface Cards
-1    rcc  0. 0. 0.         0. 0. 8.97051          4.485255    $1:1 H/D Cylinder
-2    rcc  0. 0. -4.505895  0. 0. 17.9823           8.99115      $4L of flood slurry
-3    rcc  0. 0. -20.222145    0. 0. 49.4148       24.7074    $6 inches of close fitting stainless steel, extra 0.5cm to bound glovebox
-4    rpp  -15.24 15.24   -15.24 15.24   49.489185 52.029185       $HEPA filter                                        
+1    rcc  0. 0. 0.       0. 0. 11.3021       5.65105      $1:1 H/D Cylinder
+2    rcc  0. 0. -2.54    0. 0. 16.3821      8.19105      $1 inch of close fitting water
+3    rcc  0. 0. -18.25625   0. 0. 47.8146      23.9073    $6 inches of close fitting stainless steel, extra 0.5cm to bound glovebox
+4    rpp  -15.24 15.24   -15.24 15.24   50.18755 52.72755       $HEPA filter                                        
 *5  px 81.28                                              $Reflected condition to simulate neighboring glovebox. half the length of glovebox + 8 inches for distance between gloveboxes. Skipping 10 to avoid confusion with cell cards.\
 *6  px -81.28
 *7  py 81.28
 *8  py -81.28
 9   pz 55                                              $Void boundary. 
-11  pz -55                                             $Void boundary, skipping 10 to avoid confusion with cell cards.
+11  pz -55
 
 c Data Cards
-kcode 10000 1.0 500 1000
+kcode 10000 1.0 250 1000
 ksrc 0.0   0.0   1.0   
 m100  94239.00c -0.8819188192    $ Plutonium in PuO2
-      8016.00c  -0.1180811808    $ Oxygen in PuO2
+      8016.00c  -0.1180811808     $ Oxygen in PuO2
 m200  6012.00c  -7.9232e-4                     $Stainless Steel, 8.027g/cm^3 , C12
       6013.00c  -7.68e-6                       $C13
       25055.00c -0.020000                     $Mn55
@@ -53,5 +53,5 @@ m200  6012.00c  -7.9232e-4                     $Stainless Steel, 8.027g/cm^3 , C
       26057.00c -0.0138466055                 $Fe57
       26058.00c -0.001842729                  $Fe58
 mt200     fe-56.40t            $Stainless Steel Flexing
-m400      1001.00c -444.4444444444444     8016.00c -3595.7229195722916       94239.00c -300         $Water
+m400      1001.00c 2     8016.00c 1         $Water
 mt400       h-h2o.40t
