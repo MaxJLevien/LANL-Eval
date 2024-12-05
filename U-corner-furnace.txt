@@ -3,10 +3,12 @@ c Cell Cards
 10   100  -13.335   -1        imp:n=1
 20   400  -1        1 -2      imp:n=1
 30   200  -8.027    2 -3      imp:n=1
-40   500  -0.0153      -4        imp:n=1       $36.145g (300/masspercU) over 2360cm^3
+40   600  -0.16108368898031736      -4     imp:n=1       $300gU + 30gPu over 2360cm^2 in the HEPA filter
 50   500  -8.3      -12       imp:n=1
-60   0              3 4 -5 6 -7 8 -9 11 12    imp:n=1
+60   0              14 3 4 -5 6 -7 8 -9 11 12    imp:n=1
 70   0              5:-6:7:-8:9:-11  imp:n=0
+80   400  -1        12 -13 imp:n=1
+90   200  -8.027    13 -14 imp:n=1
 
 c Surface Cards
 1    rcc  39.428 39.428 0.       0. 0. 12.610       6.305     $1:1 H/D Cylinder, assumed to be most reactive.
@@ -19,11 +21,13 @@ c Surface Cards
 *8  py -81.28
 9   pz 50                                              $Void boundary. 
 11  pz -50                                             $Void boundary, skipping 10 to avoid confusion with cell cards.
-12 rcc   39.428  2.00   0.	0. 0. 18.308	9.154	 $1:1 H/D Cylinder of U3O8
+12 rcc   -5.853119497  -5.853119497 0.       0. 0. 18.308	9.154	 $1:1 H/D Cylinder of U3O8
+13 rcc   -5.853119497  -5.853119497 -2.54    0. 0. 23.388     11.694 $Water surrounding oxide pellet
+14 rcc   -5.853119497  -5.853119497 -3.01625 0. 0. 24.3405    12.17025 $3/16ths" stainless steel bounding the glovebox around the oxide pellet.
 
 c Data Cards
 kcode 10000 1.0 100 250
-ksrc  39.428   39.428  1.0   
+ksrc  39.428   39.428  1.0   -5.853119497  -5.853119497 1.0
 m100  92235.00c 1
 m200  6012.00c -7.9232e-4                     $Stainless Steel, 8.027g/cm^3 , C12
       6013.00c -7.68e-6                       $C13
@@ -53,23 +57,11 @@ m200  6012.00c -7.9232e-4                     $Stainless Steel, 8.027g/cm^3 , C1
       26056.00c -0.599566513                  $Fe56
       26057.00c -0.0138466055                 $Fe57
       26058.00c -0.001842729                  $Fe58
-mt200     fe-56.40t            $Stainless Steel Flexing
-c m300 1001.00c -0.004529                     $Concrete, 2.25g/cm^3, H1
-c      1002.00c -1e-6                          $H2
-c      8016.00c -0.511211                      $O16
-c      8017.00c -0.000207                      $O17
-c      8018.00c -0.001182                      $O18
-c      14028.00c -0.33261228                   $Si28
-c      14029.00c -0.016738722                  $Si29
-c      14030.00c -0.011008998                  $Si30
-c      13027.00c -0.03555                      $Al27
-c      11023.00c -0.01527                      $Na23
-c      20040.00c -0.05791                      $Ca, approximating all calcium as Ca40
-c      26054.00c -0.000805441                  $Fe54
-c      26056.00c -0.0126437012                 $Fe56
-c      26057.00c -0.0002919982                 $Fe57
-c      26058.00c -3.88596e-05                  $Fe58     
+mt200     fe-56.40t            $Stainless Steel Flexing   
 m400      1001.00c 2     8016.00c 1         $Water
 mt400       h-h2o.40t
 m500  92235.00c -0.8480    $ Uranium in U3O8
       8016.00c  -0.1520     $ Oxygen in U3O8
+m600  92235.00c -300                $Glovebox holdup, uranium
+      94239.00c -30                 $Glovebox holdup, plutonium
+      8016.00c  -50.11517577742394  $Glovebox holdup, oxygen
