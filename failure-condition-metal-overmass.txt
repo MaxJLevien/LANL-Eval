@@ -23,7 +23,7 @@ c Surface Cards
 11  pz -50                                             $lower void boundary, skipping 10 to avoid confusion with cell cards.
 12    rcc  10.7330505 10.7330505 0.       0. 0. 8.04953       4.024765      $1:1 H/D Cylinder PuO2
 13    rcc  10.7330505 10.7330505 -2.54    0. 0. 13.12953      6.564765      $1 inch of close fitting water
-14    rcc  10.7330505 10.7330505 -3.01625 0. 0. 14.08203      7.517265      $3/16ths inch of steel bounding glovebox. 
+14    rcc  10.7330505 10.7330505 -3.01625 0. 0. 14.55828      7.517265      $3/16ths inch of steel bounding glovebox. 
 
 c Data Cards
 kcode 10000 1.0 250 1000

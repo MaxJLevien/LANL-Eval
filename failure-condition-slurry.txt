@@ -1,7 +1,7 @@
 Normal conditions for the leftmost glovebox $title
 c Cell Cards
 10   100  -9   -1                               imp:n=1     $PuO2 cylinder
-20   400  -1        1 -2                        imp:n=1     $slrry pseudosolution surrounding PuO2 cylinder
+20   400  -1.075        1 -2                      imp:n=1   $slurry pseudosolution surrounding PuO2 cylinder
 30   200  -8.027    2 -3                        imp:n=1     $Steel surrounding PuO2 cylinder
 40   100  -0.04803      -4                      imp:n=1     $113.3g (100/masspercPu) over 2360cm^3 HEPA filter
 50   500  -13.888        -12                    imp:n=1     $Pu metal cylinder
@@ -11,9 +11,9 @@ c Cell Cards
 90   0              5:-6:7:-8:9:-11             imp:n=0     $Void surrounding glovebox
 
 c Surface Cards
-1    rcc  36.2526 36.2526 0.         0. 0. 8.97051          4.485255          $1:1 H/D Cylinder of plutonium oxide
-2    rcc  36.2526 36.2526 -4.505895  0. 0. 17.9823          8.99115           $4L of flood slurry
-3    rcc  36.2526 36.2526 -20.222145 0. 0. 49.4148          24.7074           $6 + 3/16ths inch steel, bounding furnace + glovebox.
+1    rcc  36.29415 36.29415 0.         0. 0. 8.62514          4.31257          $1:1 H/D Cylinder of plutonium oxide
+2    rcc  36.29415 36.29415 -4.63703   0. 0. 17.8992          8.9496           $4L of flood slurry
+3    rcc  36.29415 36.29415 -20.35328  0. 0. 49.4148          24.66585         $6 + 3/16ths inch steel, bounding furnace + glovebox.
 4    rpp  -15.24 15.24   -15.24 15.24   49.489185 52.029185                   $HEPA filter                                        
 *5  px 81.28                                                                  $Reflected condition to simulate neighboring glovebox. half the length of glovebox + 8 inches for distance between gloveboxes. Skipping 10 to avoid confusion with cell cards.\
 *6  px -81.28
@@ -21,13 +21,13 @@ c Surface Cards
 *8  py -81.28
 9   pz 55                                                                     $Upper void boundary. 
 11  pz -55                                                                    $Lower void boundary, skipping 10 to avoid confusion with cell cards.
-12    rcc  6.024330503 6.024330503 0.      0. 0. 6.504         3.252          $1:1 H/D Cylinder of plutonium metal.
-13    rcc  6.024330503 6.024330503 -2.54    0. 0. 11.584       5.792          $1 inch of close fitting water apprixmiating the LVCCW or hands during movement. 
-14    rcc  6.024330503 6.024330503 -3.01625 0. 0. 12.5365      6.26825        $3/16 inch stainless steel bounding glovebox
+12    rcc  -0.1608194967 -0.1608194967 0.      0. 0. 6.504         3.252      $1:1 H/D Cylinder of plutonium metal.
+13    rcc  -0.1608194967 -0.1608194967 -2.54    0. 0. 11.584       5.792      $1 inch of close fitting water apprixmiating the LVCCW or hands during movement. 
+14    rcc  -0.1608194967 -0.1608194967 -3.01625 0. 0. 12.5365      6.26825    $3/16 inch stainless steel bounding glovebox
 
 c Data Cards
 kcode 10000 1.0 500 1000
-ksrc  36.2526 36.2526 1.0    6.024330503 6.024330503 1.0
+ksrc  36.29415 36.29415 1.0    6.024330503 6.024330503 1.0
 m100  94239.00c -0.8819188192                   $Plutonium in PuO2
       8016.00c  -0.1180811808                   $Oxygen in PuO2
 m200  6012.00c  -7.9232e-4                      $Stainless Steel, 8.027g/cm^3 , C12
